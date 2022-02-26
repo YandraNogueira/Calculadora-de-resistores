@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de Resistores</title>
+  <style type="text/css">
+    #title{
+      font-size: 25px;
+    }
+    button{
+      color: azure;
+      height: 30px;
+      width: 95px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-top: -15px;     
+      color: black;
+      font-size: 20px;
+    }
+    body{
+      background-color: #dfe4ea;
+    }
+    form{
+      background-color:#f7f1e3;
+      color: black;
+      font-size: 19px;
+      width: 80%;
+      margin-bottom: -84px;
+      margin-top: -17px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 80px;
+   }
+
+   legend{
+     font-weight: bolder;
+     font-size: 24px;
+     padding-left: 20px;
+   }
+
+   fieldset{
+     margin: 20px;
+   }
+
+   input{
+     margin: 10px;
+   }
+
+  </style>
+</head>
+<body>
+	<form>
+		<fieldset>
+		<legend id="title">Faixas do Resistor</legend>
+            <label for="PriFaixa">1° Faixa:</label>
+              <select name="pri" id="PriFaixa">
+                <option value="0">Preto (0)</option>
+                <option value="1">Marrom (1)</option>
+                <option value="2">Vermelho (2)</option>
+                <option value="3">Laranja (3)</option>
+                <option value="4">Amarelo (4)</option>
+                <option value="5">Verde (5)</option>
+                <option value="6">Azul (6)</option>
+                <option value="7">Violeta (7)</option>
+                <option value="8">Cinza (8)</option>
+                <option value="9">Branco (9)</option>
+              </select>
+              <br>
+              <br>
+              <label for="SegFaixa">2° Faixa:</label>
+              <select name="seg" id="SegFaixa">
+                <option value="0">Preto (0)</option>
+                <option value="1">Marrom (1)</option>
+                <option value="2">Vermelho (2)</option>
+                <option value="3">Laranja (3)</option>
+                <option value="4">Amarelo (4)</option>
+                <option value="5">Verde (5)</option>
+                <option value="6">Azul (6)</option>
+                <option value="7">Violeta (7)</option>
+                <option value="8">Cinza (8)</option>
+                <option value="9">Branco (9)</option>
+              </select>
+              <br>
+              <br>
+              <label for="TerFaixa">Multiplicador:</label>
+              <select name="ter" id="TerFaixa">
+                <option value="1">Preto (1 Ω)</option>
+                <option value="10">Marrom (10 Ω)</option>
+                <option value="100">Vermelho (100 Ω)</option>
+                <option value="1000">Laranja (1K Ω)</option>
+                <option value="10000">Amarelo (10K Ω)</option>
+                <option value="100000">Verde (100K Ω)</option>
+                <option value="1000000">Azul (1M Ω)</option>
+                <option value="10000000">Violeta (10M Ω)</option>
+                <option value="0.1">Dourado (0.1 Ω)</option>
+                <option value="0.01">Prata (0.01 Ω)</option>
+              </select>
+              <br>
+              <br>
+              <label for="QuaFaixa">Tolerância:</label>
+              <select name="qua" id="QuaFaixa">
+                <option value="0.01">Marrom (± 1%)</option>
+                <option value="0.02">Vermelho (± 2%)</option>
+                <option value="0.005">Verde (± 0.5%)</option>
+                <option value="0.0025">Azul (± 0.25%)</option>
+                <option value="0.001">Violeta (± 0.1%)</option>
+                <option value="0.0005">Cinza (± 0.05%)</option>
+                <option value="0.05">Dourado (± 5%)</option>
+                <option value="0.1">Prata (± 10%)</option>
+              </select>
+        </fieldset>
+        <fieldset>
+        <legend id="title">Resultado</legend>
+        <div id="result"></div>
+        </fieldset>
+        <br>
+        <center>
+        <img src="img/resistores.png">
+        </center>
+	</form>
+  <br>
+  <br>
+	<p><button type="button" onclick="pegarDados()"><b>Calcular</b></button></p>
+    <script src="script.js"></script>
+</body>
+</body>
+</html>
